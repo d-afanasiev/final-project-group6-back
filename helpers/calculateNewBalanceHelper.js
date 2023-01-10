@@ -1,6 +1,6 @@
 function calculateNewBalanceHelper(type, amount, user, whatFor = 'forAdd') {
   const mult = whatFor === 'forAdd' ? 1 : -1;
-  const currentBalance = parseInt(user.currentBalance);
+  const currentBalance = parseFloat(user.currentBalance);
   if (type === 'income') return currentBalance + amount * mult;
   return currentBalance - amount * mult;
 }
