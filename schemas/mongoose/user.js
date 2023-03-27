@@ -41,8 +41,8 @@ const userSchema = Schema(
     },
 
     currentBalance: {
-      type: String,
-      default: null,
+      type: Decimal128,
+      default: 0,
     },
     startBalance: {
       type: String,
