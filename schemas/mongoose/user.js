@@ -41,8 +41,8 @@ const userSchema = Schema(
     },
 
     currentBalance: {
-      type: Number,
-      default: 0,
+      type: String,
+      default: null,
     },
     startBalance: {
       type: String,
