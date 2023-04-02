@@ -41,7 +41,7 @@ const userSchema = Schema(
     },
 
     currentBalance: {
-      type: mongoose.Types.Decimal128,
+      type: Number,
       default: 0,
     },
     startBalance: {

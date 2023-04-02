@@ -4,7 +4,7 @@ async function getCurrentController({ user }, res) {
     email: user.email,
     userName: user.userName,
     avatarUrl: user.avatarUrl,
-    currentBalance: user.currentBalance.$numberDecimal,
+    currentBalance: user.currentBalance,
     startBalance: user.startBalance,
   });
 }
