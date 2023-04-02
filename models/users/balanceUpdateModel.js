@@ -1,6 +1,7 @@
 import { User } from '../../schemas/mongoose/index.js';
 
 const balanceUpdateModel = async (currentBalance, user, type) => {
+  currentBalance = currentBalance.toFixed(2);
   let updatedUser;
   if (type === 'transaction') {
     // если добавляется транзакция - то она ни как не влияет на стартовый баланс
